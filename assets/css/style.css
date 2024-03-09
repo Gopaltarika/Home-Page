@@ -172,6 +172,11 @@
     padding-bottom: 164px;
 }
 
+.py-50 {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
 /* =============margin================ */
 .my-80 {
     margin-top: 80px;
@@ -185,7 +190,7 @@
 /*===================== common classes =========================*/
 h2 {
     margin: 0 !important;
-    line-height: clamp(35px, 4vw, 56.88px) !important;
+    line-height: 56.88px !important;
     font-size: clamp(28px, 3.5vw, 48px) !important;
     color: var(--fc-black) !important;
 }
@@ -206,7 +211,7 @@ p {
     min-height: 100vh;
 }
 
-/* ===================navbar======================= */
+/* ===================Navbar======================= */
 .bg-nav {
     background: #0000000A;
     height: 80px;
@@ -263,7 +268,7 @@ nav ul li a:hover::after {
 }
 
 .icon {
-    width: 40px;
+    width: 35px;
     height: 4px;
     border-radius: 20px;
     transition: .4s;
@@ -415,6 +420,7 @@ nav ul li a:hover::after {
     margin-top: 30px !important;
     background: transparent !important;
     line-height: 26.4px;
+    padding-right: 15px !important;
 }
 
 .faq .accordion-button:not(.collapsed) {
@@ -443,6 +449,10 @@ nav ul li a:hover::after {
 
 .faq .accordion-button::after {
     background-image: url(/assets/images/svg/accordian-svg.svg) !important;
+}
+
+.faq .accordion-button:focus {
+    box-shadow: unset !important;
 }
 
 /* ============contact-box================ */
@@ -474,7 +484,7 @@ nav ul li a:hover::after {
     transform: translateY(-35px);
 }
 
-/* ==================================footer========================== */
+/* ================================= footer ========================== */
 .translate-hover {
     transition: .4s;
 }
@@ -486,7 +496,8 @@ nav ul li a:hover::after {
 .border-foot {
     border-top: 1px solid #808285;
 }
-.hover li a:hover{
+
+.hover li a:hover {
     color: var(--fc-white);
 }
 
@@ -547,7 +558,7 @@ nav ul li a:hover::after {
 }
 
 /*=================================responsive=================== */
-@media (max-width:576.01px) {
+@media (max-width:576.02px) {
     #mobileView {
         flex-direction: column;
         position: fixed;
@@ -574,7 +585,7 @@ nav ul li a:hover::after {
     }
 
     :root {
-        --fs-xs: 13px;
+        --fs-xs: 14px;
         --fs-s: 16px;
         --fs-m: 18px !important;
         --fs-lg: 20px;
@@ -592,11 +603,35 @@ nav ul li a:hover::after {
         padding-top: 60px;
         padding-bottom: 60px;
     }
+
+    .h2 {
+        line-height: 40px;
+    }
+
+    .contact-box svg {
+        width: 60px;
+        height: 60px;
+    }
+
+    .btn-nav {
+        Padding: 10px 12px 10px 12px;
+    }
 }
 
 @media (max-width:768.01px) {
     .bg-hero-img {
         background-size: cover !important;
+    }
+
+    .play-btn {
+        width: 80px;
+        height: 80px;
+    }
+.pt-80{
+    padding-top: 0;
+}
+    .h2 {
+        line-height: 45px;
     }
 
     .img-hover:hover {
@@ -656,12 +691,21 @@ nav ul li a:hover::after {
         background: #006EE60A;
         backdrop-filter: blur(5px);
     }
+
+    .py-50 {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
 }
 
 @media (max-width:992px) {
     :root {
         --fs-lg: 28px;
         --fs-xl: 35px;
+    }
+
+    .h2 {
+        line-height: 50px;
     }
 }
 
