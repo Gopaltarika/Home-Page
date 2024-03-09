@@ -178,6 +178,10 @@
     margin-bottom: 80px;
 }
 
+.pt-card-100 {
+    padding-top: 100px;
+}
+
 /*===================== common classes =========================*/
 h2 {
     margin: 0 !important;
@@ -408,7 +412,7 @@ nav ul li a:hover::after {
 /* ====================Faq================= */
 .faq .accordion-button {
     padding: 0 !important;
-    padding-top: 30px !important;
+    margin-top: 30px !important;
     background: transparent !important;
     line-height: 26.4px;
 }
@@ -482,6 +486,9 @@ nav ul li a:hover::after {
 .border-foot {
     border-top: 1px solid #808285;
 }
+.hover li a:hover{
+    color: var(--fc-white);
+}
 
 /* ================== slick-slider =========================*/
 .slick-dots li button:before {
@@ -540,7 +547,7 @@ nav ul li a:hover::after {
 }
 
 /*=================================responsive=================== */
-@media (max-width:576px) {
+@media (max-width:576.01px) {
     #mobileView {
         flex-direction: column;
         position: fixed;
@@ -587,9 +594,13 @@ nav ul li a:hover::after {
     }
 }
 
-@media (max-width:768px) {
+@media (max-width:768.01px) {
     .bg-hero-img {
         background-size: cover !important;
+    }
+
+    .img-hover:hover {
+        transform: translateY(0px) !important;
     }
 
     .border-scroll {
@@ -615,6 +626,10 @@ nav ul li a:hover::after {
 
     .pt-100 {
         padding-top: 60px;
+    }
+
+    .pt-card-100 {
+        padding-top: 20px;
     }
 
     .py-60 {
@@ -653,11 +668,5 @@ nav ul li a:hover::after {
 @media (max-width:1400px) {
     .slick-dots {
         bottom: -25px !important;
-    }
-}
-
-@media (min-width:1536.01px) {
-    .bg-hero-img {
-        min-height: 810px;
     }
 }
