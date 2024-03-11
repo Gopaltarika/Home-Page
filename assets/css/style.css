@@ -558,7 +558,7 @@ nav ul li a:hover::after {
 }
 
 /*=================================responsive=================== */
-@media (max-width:576.02px) {
+@media (max-width:575.9px) {
     #mobileView {
         flex-direction: column;
         position: fixed;
@@ -618,7 +618,7 @@ nav ul li a:hover::after {
     }
 }
 
-@media (max-width:768.01px) {
+@media (max-width:767.9px) {
     .bg-hero-img {
         background-size: cover !important;
     }
@@ -627,11 +627,9 @@ nav ul li a:hover::after {
         width: 80px;
         height: 80px;
     }
-.pt-80{
-    padding-top: 0;
-}
-    .h2 {
-        line-height: 45px;
+
+    .pt-80 {
+        padding-top: 0;
     }
 
     .img-hover:hover {
@@ -706,6 +704,10 @@ nav ul li a:hover::after {
 
     .h2 {
         line-height: 50px;
+    }
+
+    h2 {
+        line-height: 45px !important;
     }
 }
 
